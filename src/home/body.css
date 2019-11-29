@@ -1,0 +1,69 @@
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 3.5rem;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    white-space: nowrap;
+}
+
+.tfl::before {
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    left: -1%;
+    width: 102%;
+    height: 3px;
+    background: #eeeeee;
+    transition: all ease-in-out 0.1s;
+    z-index: -1;
+}
+
+.tfl:hover::before {
+    height: 90%;
+    bottom: 5%;
+}
+
+.tfl:hover {
+    color: #1F00A6;
+    font-weight: 400;
+}
+
+.durham::before {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: -1%;
+    width: 102%;
+    height: 3px;
+    background: #eeeeee;
+    transition: all ease-in-out 0.1s;
+    z-index: -1;
+}
+
+.durham:hover::before {
+    height: 90%;
+    bottom: 10%;
+}
+
+.durham:hover {
+    color: #661A6C;
+    font-kerning: auto;
+}
