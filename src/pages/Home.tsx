@@ -1,10 +1,10 @@
 import React from 'react'
-import { Name } from '../home'
-
+import { Name, Body } from '../home'
 const Home: React.FC = () => {
     return (
         <div>
             <Name />
+            <Body/>
         </div>
     )
 }
