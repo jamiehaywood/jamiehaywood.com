@@ -1,10 +1,14 @@
 import React from 'react'
-import { Name, Body } from '../home'
+import { NavBar, Footer } from '../navigation'
+import { Body, Image } from '../home'
+
 const Home: React.FC = () => {
     return (
-        <div>
-            <Name />
-            <Body/>
+        <div style={{ marginTop:"2vh"}}>
+            <Image />
+            <NavBar />
+            <Body />
+            <Footer />
         </div>
     )
 }
