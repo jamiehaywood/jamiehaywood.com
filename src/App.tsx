@@ -7,8 +7,8 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route exact path='/' component={Home} />
-        {/* <Route exact path='/CV' component={Cv} />
-        <Route exact path='/Books' component={Books} /> */}
+        {/* <Route exact path='/cv' component={Cv} />
+        <Route exact path='/projects' component={Projects} /> */}
       </Switch>
     </Router>
   );
