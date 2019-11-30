@@ -3,7 +3,8 @@
     max-width: 650px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 3.5rem;
+    padding: 0 3vw;
+    text-align: justify;
 }
 
 *, *:before, *:after {
@@ -15,8 +16,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+b {
+    color: #000000;
+    font-weight: 400;
+}
+
 a {
-    color: #111111;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -24,29 +29,7 @@ a {
     white-space: nowrap;
 }
 
-.tfl::before {
-    content: '';
-    position: absolute;
-    bottom: 8%;
-    left: -1%;
-    width: 102%;
-    height: 3px;
-    background: #eeeeee;
-    transition: all ease-in-out 0.1s;
-    z-index: -1;
-}
-
-.tfl:hover::before {
-    height: 90%;
-    bottom: 5%;
-}
-
-.tfl:hover {
-    color: #1F00A6;
-    font-weight: 400;
-}
-
-.durham::before {
+.blogLink::before {
     content: '';
     position: absolute;
     bottom: 10%;
@@ -57,13 +40,30 @@ a {
     transition: all ease-in-out 0.1s;
     z-index: -1;
 }
+.black{
+    color: #111111;
+}
 
-.durham:hover::before {
+.blogLink:hover::before {
     height: 90%;
     bottom: 10%;
 }
 
-.durham:hover {
-    color: #661A6C;
+.blogLink:hover {
+    color: black;
     font-kerning: auto;
+}
+
+h1{
+    font-size: 18px;
+    color: #333333;
+}
+
+.roundel{
+    width: 20px;
+    display: inline;
+    position: relative;
+    bottom: -2px;
+    filter: grayscale(100%);
+    opacity: 0.5;
 }
