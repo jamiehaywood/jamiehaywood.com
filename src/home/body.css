@@ -67,3 +67,8 @@ h1{
     filter: grayscale(100%);
     opacity: 0.5;
 }
+
+.animated.delay-three {
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
