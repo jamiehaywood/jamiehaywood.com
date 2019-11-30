@@ -1,4 +1,3 @@
 import Body from './Body'
-import Name from './Name'
-
-export { Body, Name }
+import Image from './Image'
+export { Body, Image }
