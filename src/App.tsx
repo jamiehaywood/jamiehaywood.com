@@ -5,7 +5,7 @@ import { Home } from "./pages";
 const App: React.FC = () => {
   console.log(
     "%c Thanks for having a look under the hood! Visit https://jamiehaywood.com/cv for my CV",
-    'background: url(https://cdn.onlinewebfonts.com/svg/img_461669.png); display: block; margin-left: 80px; background-repeat: no-repeat; padding-left: 90px; color: #666666; background-size: 55px 70px;font:18px/70px "Open Sans", sans-serif;'
+    'background: url(https://cdn.onlinewebfonts.com/svg/img_461669.png); display: block; margin-left: 80px; background-repeat: no-repeat; padding-left: 90px; color: #666666; background-size: 55px 70px;font:18px/70px "Open Sans", sans-serif'
   );
 
   return (
