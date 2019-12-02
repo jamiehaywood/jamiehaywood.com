@@ -1,16 +1,16 @@
-import React from 'react'
-import { NavBar, Footer } from '../navigation'
-import { Body, Image } from '../home'
+import React from "react";
+import { NavBar, Footer } from "../navigation";
+import { Body, Image } from "../home";
 
 const Home: React.FC = () => {
-    return (
-        <div style={{ marginTop:"2vh"}}>
-            <Image />
-            <NavBar />
-            <Body />
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div style={{ marginTop: "2vh" }}>
+      <Image />
+      <NavBar />
+      <Body />
+      <Footer />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
