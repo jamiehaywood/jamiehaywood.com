@@ -6,7 +6,7 @@ interface props {}
 const TopNav: React.FC<props> = props => {
   return (
     <div className="navigation fadeIn animated delay-two">
-      <a className="navLinks" href="/blog">
+      <a className="navLinks" href="https://medium.com/@jamiehaywood">
         BLOG
       </a>
       &nbsp; | &nbsp;
