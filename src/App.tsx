@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import { Home, Blog } from "./pages";
+import { Home, CV } from "./pages";
 
 const App: React.FC = () => {
   console.log(
@@ -12,9 +12,8 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path='/blog' component={Blog} />
-        {/* <Route exact path='/cv' component={Cv} />
-        <Route exact path='/projects' component={Projects} /> */}
+        <Route exact path='/cv' component={CV} />/>
+        {/* <Route exact path='/projects' component={Projects} /> */}
       </Switch>
     </Router>
   );
