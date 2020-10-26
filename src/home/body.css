@@ -59,13 +59,13 @@ h1 {
   color: #333333;
 }
 
-.roundel {
+.logo {
   width: 20px;
   display: inline;
   position: relative;
-  bottom: -2px;
   filter: grayscale(100%);
   opacity: 0.5;
+  vertical-align: middle;
 }
 
 .animated.delay-three {
