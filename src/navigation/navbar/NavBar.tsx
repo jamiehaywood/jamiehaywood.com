@@ -1,9 +1,8 @@
-import React from "react";
-import "./navbar.css";
+import './navbar.css';
 
-interface props {}
+import React from 'react';
 
-const TopNav: React.FC<props> = props => {
+const TopNav = () => {
   return (
     <div className="navigation fadeIn animated delay-two">
       <a className="navLinks" href="https://medium.com/@jamiehaywood">

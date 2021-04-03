@@ -1,9 +1,8 @@
-import React from "react";
-import "./image.css";
+import './image.css';
 
-interface props {}
+import React from 'react';
 
-const Image: React.FC<props> = props => {
+const Image = () => {
   return (
     <div className="photoContainer fadeIn animated delay-quick">
       <img

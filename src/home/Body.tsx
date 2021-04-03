@@ -1,13 +1,12 @@
-import React from "react";
-import "./body.css";
+import './body.css';
 
-interface props {}
+import React from 'react';
 
-const Body: React.FC<props> = (props) => {
+const Body = () => {
   return (
     <div className="fadeIn animated delay-three container">
-      <h1> Hi, I'm Jamie. </h1>
-      I'm a Frontend Technical Lead at Captur&nbsp;
+      <h1> Hi, I&apos;m Jamie. </h1>
+      I&apos;m a Frontend Technical Lead at Captur&nbsp;
       <svg className="logo" viewBox="0 0 1067 1067">
         <path
           fill="#49A499"
@@ -20,23 +19,23 @@ const Body: React.FC<props> = (props) => {
       </svg>
       <br />
       <p>
-        I believe that the best software is shipped using a{" "}
-        <b>customer-centric</b> approach and rapid iteration to deliver{" "}
-        <b>the most value in the least time</b>. As such, I frequently
-        apply my background in anthropology to build software products that have
-        a <b>lasting impact</b> on how people interact with them.
+        I believe that the best software is shipped using a{' '}
+        <b>customer-centric</b> approach and rapid iteration to deliver{' '}
+        <b>the most value in the least time</b>. As such, I frequently apply my
+        background in anthropology to build software products that have a{' '}
+        <b>lasting impact</b> on how people interact with them.
       </p>
       <p>
         I am a big experimenter with new technologies and implementing them into
-        my personal and work projects. I write about things{" "}
+        my personal and work projects. I write about things{' '}
         <a href="https://medium.com/@jamiehaywood" className="blogLink black">
           here
         </a>
         .
       </p>
       <p>
-        When I'm not developing software, I enjoy yachting, playing backgammon,
-        and reading.
+        When I&apos;m not developing software, I enjoy yachting, playing
+        backgammon, and reading.
       </p>
     </div>
   );

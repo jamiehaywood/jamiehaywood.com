@@ -1,17 +1,16 @@
-import React from "react";
-import { underConstruction } from "../images";
+import React from 'react';
 
-interface props {}
+import underConstruction from '../images/underconstruction.png';
 
-const Blog: React.FC<props> = (props) => {
+const Blog = () => {
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
-      <div style={{ margin: "auto" }}>
+    <div style={{ display: 'flex', height: '100vh' }}>
+      <div style={{ margin: 'auto' }}>
         <img
           src={underConstruction}
           alt="under-construction"
-          width={"300px"}
-          style={{ textAlign: "center" }}
+          width={'300px'}
+          style={{ textAlign: 'center' }}
         />
       </div>
     </div>

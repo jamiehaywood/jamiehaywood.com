@@ -1,5 +1,5 @@
-import Home from "./Home";
-import Blog from "./Blog"
-import CV from "./CV"
+import Blog from './Blog';
+import CV from './CV';
+import Home from './Home';
 
-export { Home, Blog, CV};
+export { Blog, CV, Home };
