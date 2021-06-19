@@ -1,3 +1,11 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const fs = require('fs');
+
+const foldersUnderSrc = fs
+  .readdirSync('src', { withFileTypes: true })
+  .filter((dirent) => dirent.isDirectory())
+  .map((dirent) => dirent.name);
+
 module.exports = {
   extends: ['react-app'],
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
@@ -28,6 +36,7 @@ module.exports = {
     'no-restricted-globals': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'sort-imports': 'off',
     'no-console': 'warn',
     'no-debugger': 'warn',
     'id-length': ['warn', { min: 2, exceptions: ['e', '_'] }],
@@ -35,6 +44,30 @@ module.exports = {
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
   },
   overrides: [
+    {
+      files: ['*.tsx', '*.ts', '*.js', '*.jsx'],
+      rules: {
+        'simple-import-sort': [
+          'error',
+          {
+            groups: [
+              ['^react', '^@?\\w'],
+              // Internal packages.
+              ['^(@|@company|@ui|components|utils|config|vendored-lib)(/.*|$)'],
+              // Side effect imports.
+              ['^\\u0000'],
+              // Parent imports. Put `..` last.
+              ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+              [`^(${foldersUnderSrc.join('|')})(/.*|$)`, '^\\.'],
+              // Other relative imports. Put same-folder imports and `.` last.
+              ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+              // Style imports.
+              ['^.+\\.s?css$'],
+            ],
+          },
+        ],
+      },
+    },
     {
       files: '.eslintrc.js',
       rules: {
