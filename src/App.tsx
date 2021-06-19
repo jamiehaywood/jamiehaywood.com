@@ -1,4 +1,5 @@
-import React from 'react';
+import { SuspenseLoader } from 'components';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { CV, Home } from './pages';
@@ -10,13 +11,15 @@ const App: React.FC = () => {
   // );
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/cv" component={CV} />
-        {/* <Route exact path='/projects' component={Projects} /> */}
-      </Switch>
-    </Router>
+    <Suspense fallback={<SuspenseLoader />}>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cv" component={CV} />
+          {/* <Route exact path='/projects' component={Projects} /> */}
+        </Switch>
+      </Router>
+    </Suspense>
   );
 };
 
